@@ -45,8 +45,12 @@ function game() {
     if (g > h) {
         document.querySelectorAll("p")[1].innerHTML = "Player 2 🚩";
     }
-    else {
+    else if(h>g) {
         document.querySelectorAll("p")[0].innerHTML = "Player 1 🚩";
+    }
+    else{
+        document.querySelectorAll("p")[0].innerHTML = "A Tie !!!";
+        document.querySelectorAll("p")[1].innerHTML = "A Tie !!!";
     }
 }
    function rotate(){
